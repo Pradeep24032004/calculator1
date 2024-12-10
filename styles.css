@@ -1,0 +1,115 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #2E3957; /* Dark blue background */
+    color: white;
+}
+
+/* Calculator container */
+.calculator {
+    width: 100%;
+    max-width: 360px;
+    background: #3B4B6B; /* Slightly lighter blue */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+.title {
+    text-align: left;
+    font-size: 1.2rem;
+    margin: 0;
+    margin-bottom: 15px;
+    color: #dcdcdc;
+}
+
+/* Display input */
+.display {
+    background: #1B2238; /* Darker display */
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.display input {
+    width: 100%;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    text-align: right;
+}
+
+/* Button grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    color: #3B4B6B;
+    background: #E8E8E8;
+}
+
+button:hover {
+    background: #d4d4d4;
+}
+
+button:active {
+    background: #bbbbbb;
+}
+
+/* Special buttons */
+.operator {
+    background: #7785A1; /* Light blue for operators */
+    color: white;
+}
+
+.operator:hover {
+    background: #66748F;
+}
+
+.action {
+    background: #66748F; /* Slightly darker blue for actions */
+    color: white;
+}
+
+.action:hover {
+    background: #556083;
+}
+
+.reset {
+    grid-column: span 2;
+    background: #FF6B6B; /* Red for reset */
+    color: white;
+}
+
+.reset:hover {
+    background: #E05C5C;
+}
+
+.equals {
+    grid-column: span 2;
+    background: #4CAF50; /* Green for equals */
+    color: white;
+}
+
+.equals:hover {
+    background: #43A047;
+}
+
+
